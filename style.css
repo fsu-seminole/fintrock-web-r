@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+.logo {
+  width: 160px;
+  margin: 20px auto;
+  display: block;
+}
+.hero {
+  text-align: center;
+  background: url('https://via.placeholder.com/1600x500') no-repeat center center;
+  background-size: cover;
+  padding: 60px 20px;
+  color: #111;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  margin: 20px 0;
+}
+.cta-buttons .btn {
+  margin: 10px;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+}
+.primary {
+  background-color: #18453b;
+  color: white;
+}
+.secondary {
+  background-color: white;
+  border: 2px solid #18453b;
+  color: #18453b;
+}
+.about, .featured-properties, .areas-served, .cta {
+  padding: 40px 20px;
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+.property-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.property-card {
+  background: white;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 280px;
+}
+.property-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+.property-card .status {
+  font-weight: bold;
+  display: block;
+  margin-top: 5px;
+}
+.status.available {
+  color: #2e7d32;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+ul li {
+  margin: 8px 0;
+}
+.cta {
+  background-color: #f1f1f1;
+  border-top: 1px solid #ddd;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  background-color: #eee;
+  border-top: 1px solid #ccc;
+}
