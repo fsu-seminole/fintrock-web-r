@@ -3,66 +3,127 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fintrock Real Estate</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Fintrock</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background-color: #ffffff;
+      color: #222;
+    }
+    header {
+      background-color: #f8f9fa;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+    .logo {
+      background-color: #000;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+    }
+    .logo img {
+      height: 40px;
+    }
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+    .hero {
+      text-align: center;
+      padding: 5rem 2rem;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.25rem;
+      color: #555;
+      margin-bottom: 2rem;
+    }
+    .hero button {
+      background-color: #000;
+      color: #fff;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .section {
+      background-color: #f9f9f9;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    .section h2 {
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .service-item {
+      flex: 1 1 200px;
+      max-width: 250px;
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    footer {
+      background-color: #f0f0f0;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.875rem;
+      color: #666;
+    }
+  </style>
 </head>
 <body>
-  <header class="hero">
-    <img src="fintrock-logo.png" alt="Fintrock Logo" class="logo" />
-    <h1>Honest Rentals. Real Value.</h1>
-    <div class="cta-buttons">
-      <a href="#" class="btn primary">Schedule a Consultation</a>
-      <a href="#" class="btn secondary">Work With Us</a>
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Fintrock Logo" />
     </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <section class="about">
+  <section class="hero">
+    <h1>Welcome to Fintrock</h1>
+    <p>Real estate done right.</p>
+    <button>Learn More</button>
+  </section>
+
+  <section class="section" id="about">
     <h2>About Fintrock</h2>
-    <p>
-      Fintrock connects hard-working individuals and families with short- and long-term
-      rental housing they can count on. We're proud to serve working communities with
-      real homes and real integrity.
-    </p>
+    <p>We manage property investments efficiently using single-property LLCs under a streamlined management model.</p>
   </section>
 
-  <section class="featured-properties">
-    <h2>Featured Properties</h2>
-    <div class="property-grid">
-      <div class="property-card">
-        <img src="https://via.placeholder.com/300x200" alt="Property 1" />
-        <p><strong>Orange Park</strong><br>3BR / 2BA – Long-Term<br><span class="status available">Available</span></p>
-        <a href="#" class="btn small">View Details</a>
-      </div>
-      <div class="property-card">
-        <img src="https://via.placeholder.com/300x200" alt="Property 2" />
-        <p><strong>1234 Oak Street</strong><br>3BR – Long-Term<br><span class="status available">Available</span></p>
-        <a href="#" class="btn small">View Details</a>
-      </div>
-      <div class="property-card">
-        <img src="https://via.placeholder.com/300x200" alt="Property 3" />
-        <p><strong>Westside</strong><br>3BR – Long-Term<br><span class="status">Coming Soon</span></p>
-        <a href="#" class="btn small">View Details</a>
-      </div>
+  <section class="section" id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service-item">✔ Property Management</div>
+      <div class="service-item">✔ Legal Entity Setup</div>
+      <div class="service-item">✔ Acquisition Strategy</div>
+      <div class="service-item">✔ Ongoing Bookkeeping</div>
     </div>
-  </section>
-
-  <section class="areas-served">
-    <h2>Areas We Serve</h2>
-    <ul>
-      <li>Northeast Florida</li>
-      <li>Jacksonville Suburbs</li>
-      <li>Clay & Duval Counties</li>
-      <li>Rural/Small-Town Housing</li>
-    </ul>
-  </section>
-
-  <section class="cta">
-    <p>Need a reliable place to live or rent out your property? We’re here to help.</p>
-    <a href="#" class="btn primary">Schedule a Consultation</a>
   </section>
 
   <footer>
-    <p>&copy; 2025 Fintrock Real Estate. All rights reserved.</p>
+    © 2025 Fintrock LLC. All rights reserved. <br />
+    <a href="#">Privacy Policy</a> | <a href="#">Contact</a>
   </footer>
 </body>
 </html>
